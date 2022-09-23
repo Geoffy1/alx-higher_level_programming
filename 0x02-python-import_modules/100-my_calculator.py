@@ -11,7 +11,7 @@ if __name__ == "__main__":
     a = int(argv[1])
     b = int(argv[3])
     ops = ["+", "-", "*", "/"]
-    
+
     def not_found():
         print("Unknown operator. Available operators: +, -, * and /")
         quit(1)
@@ -37,10 +37,9 @@ if __name__ == "__main__":
         return total
 
     options = {
-            options = {
-                "+": my_add,
-                "-": my_sub,
-                "*": my_mul,
-                "/": my_div
-
-
+        "+": my_add,
+        "-": my_sub,
+        "*": de_mul,
+        "/": de_div
+    }
+    options.get(op, not_found)()
