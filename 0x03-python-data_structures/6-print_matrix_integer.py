@@ -2,5 +2,5 @@
 def print_matrix_integer(matrix=[[]]):
     for sublist in matrix:
         for colu in sublist:
-             print("{:d}".format(col), end=" " if col != row[-1] else "")
+             print("{:d}".format(colu), end=" " if colu != sublist[-1] else "")
         print("")
