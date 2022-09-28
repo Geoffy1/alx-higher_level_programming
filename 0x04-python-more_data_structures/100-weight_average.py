@@ -7,3 +7,4 @@ def weight_average(my_list=[]):
             average += (tup[0] * tup[1])
             idx += tup[1]
         return float(average / idx)
+    return 0
