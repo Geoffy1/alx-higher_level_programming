@@ -2,6 +2,6 @@
 
 const myStr = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-for (idex = 0; idex < 3; idex++) {
-  console.log(myStr[idex]);
+for (postN = 0; postN < 3; postN++) {
+  console.log(myStr[postN]);
 }
