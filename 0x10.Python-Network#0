@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Take URL as input
+read -p "Enter URL: " url
+
+# Send request to URL and save response body to a variable
+response=$(curl -sL "$url")
+
+# Get the size of the response in bytes
+size=$(echo -n "$response" | wc -c)
+
+# Display the size of the response in bytes
+echo "Size of response body: $size bytes"
