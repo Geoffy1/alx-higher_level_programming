@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Take URL as input
+read -p "Enter URL: " url
+
+# Send GET request to URL and save response to a variable
+response=$(curl -sL -w "%{http_code}" -o /dev/null "$url")
+
+# Check if the status code is 200
+if [ "$response" -eq 200 ]; then
+    # Send GET request to URL and save response body to a variable
+    body=$(curl -sL "$url")
+
+    # Display the response body
+    echo "$body"
+else
+    # Display error message
+    echo "Error: Received $response status code"
+fi
