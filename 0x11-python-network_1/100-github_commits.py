@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-list 10 commits (from the most recent to oldest) of the repo and user
+list 10 commits (from most recent to oldest) of the repo and user
 sent in as args
 """
 if __name__ == '__main__':
