@@ -1,1 +1,1 @@
-more JS tasks
+more JS tasks documentation
